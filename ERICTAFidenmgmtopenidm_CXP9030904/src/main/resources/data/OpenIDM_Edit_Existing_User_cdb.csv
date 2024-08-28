@@ -1,0 +1,2 @@
+step,host,command,args,expectedOut,expectedOutCode,expectedExit,timeout
+Edit an existing user in openIDM with a new valid password,sc1,curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request POST -d '[{""replace"":""password"", ""value"": ""TestPassw0rd2""}]' ""https://HTTPD_HOST_NAME/openidm/managed/user?_action=patch&_queryId=for-userName&uid=openidmtafjohn""","",0,0,10000

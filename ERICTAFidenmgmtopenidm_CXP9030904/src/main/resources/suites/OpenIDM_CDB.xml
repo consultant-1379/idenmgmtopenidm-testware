@@ -1,0 +1,191 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- This file contains settings for running OpenIDM TAF test suite for CDB 
+	with a narrowed number of test cases used in general purpose. This was done 
+	due to huge amount of time consumed by running general test suite. -->
+<suite name="OpenIDM_CDB">
+	<test name="OpenIDM Create User Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.taf.test.cases.OpenIDM_CreateUser_Test">
+				<methods>
+					<include name="createUser" />
+					<include name="deleteUser" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+    <test name="OpenIDM Status Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_VerifyOpenIDMStatus">
+                <methods>
+                    <include name="verifyOpenIDMStatus"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM User Management Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_ChangeEmail_Test">
+                <methods>
+                    <include name="changeEmailByAdmin_Test" />
+                    <include name="changeEmailByUser_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_Role_Management_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_Roles_Test">
+                <methods>
+                    <include name="assignRoleToUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_ChangeRole_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_ChangeRole_Test">
+                <methods>
+                    <include name="changeRoleAssignment" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_DeleteAdmin_Test">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_DeleteAdmin_Test">
+                <methods>
+                    <include name="deleteAdminUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM Validator Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_ValidatePassword_Test">
+                <methods>
+                    <include name="validatePassword_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_LastLogin_Scenario" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.scenarios.OpenIDM_LastLogin_Scenario" />
+        </classes>
+    </test>
+
+    <test name="OpenIDM_PasswordChange_Scenario" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.scenarios.OpenIDM_PasswordChange_Scenario" />
+        </classes>
+    </test>
+
+    <test name="OpenIDM User Query Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_VerifyQueryUser_Test">
+                <methods>
+                    <include name="verifyQueryUser_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_CreateRoleCheck" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_CreateRoleCheck_Test">
+                <methods>
+                    <include name="createRoleCheck" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_QueryRole" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_QueryRole_Test">
+                <methods>
+                    <include name="queryRole" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_UpdateRole" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_UpdateRole_Test">
+                <methods>
+                    <include name="updateRole" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_DeleteRole" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_DeleteRole_Test">
+                <methods>
+                    <include name="deleteRole" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_AssignRoleToNonExistingUser" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_AssignRoleToNonExistingUser_Test">
+                <methods>
+                    <include name="assignRoleToNonExistingUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_NoRightsParameterUpdate" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_NoRightsParameterUpdate_Test">
+                <methods>
+                    <include name="aeditUserProperties" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_QueryUser" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_QueryUser_Test">
+                <methods>
+                    <include name="queryUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_UpdateUser" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_UpdateUser_Test">
+                <methods>
+                    <include name="updateUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenIDM_DeleteUser" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_DeleteUser_Test">
+                <methods>
+                    <include name="deleteUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

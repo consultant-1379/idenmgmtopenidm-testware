@@ -1,0 +1,2 @@
+step,userName,password,newEmail,role
+Change user's Email,"Bob","T3stP4ssw0rd","email@bob.com","SECURITY_ADMIN"

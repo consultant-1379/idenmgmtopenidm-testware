@@ -1,0 +1,2 @@
+roleName,newDescription,outputBefore,outputAfter
+Shm_Operator,"New Role DESCRIPTION","Permits read action on managed objects in the SHM services","{""error"":400,""reason"":""Bad Request"",""message"":""Expecting _action parameter""}"

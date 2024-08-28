@@ -1,0 +1,2 @@
+step,host,parseRoleCmd,parseRoleArgs,queryRoleCmd,queryRoleArgs,exitCmd,expectedExitCode,timeout
+Verify Created Application Role,sc1,cat,"/ericsson/tor/data/access_control/policies/default/*.json |grep -Po '""'""Role""'""\s*:\s*""\K([^""]*)' |sed 's/^ *//g' |sed 's/ *$//g'",curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt https://HTTPD_HOST_NAME/openidm/managed/role/?_queryId=query-all",exit,0,5000

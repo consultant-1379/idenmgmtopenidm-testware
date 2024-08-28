@@ -1,0 +1,2 @@
+step,host,command,args,expectedOut,expectedExit,timeout
+Query an existing user,sc2,curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request GET  ""https://HTTPD_HOST_NAME/openidm/managed/user/openidmtafjohn""","""userName"":""openidmtafjohn""",0,10000

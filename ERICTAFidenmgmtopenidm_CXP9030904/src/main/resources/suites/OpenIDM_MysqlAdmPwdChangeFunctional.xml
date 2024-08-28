@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OpenIDMChangeMysqlAdminPwd">
+    <test name="OpenIDM Change MYSQL Admin Password">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_ChangeMysqlAdmPwdFunctionalTest"/>
+        </classes>
+    </test>
+</suite>

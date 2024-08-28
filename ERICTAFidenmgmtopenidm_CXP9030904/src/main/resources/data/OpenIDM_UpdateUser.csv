@@ -1,0 +1,5 @@
+userName,property,propertyValue,outputBefore,outputAfter
+Kyle,firstName,Kyle,DummyFirstName,Kyle
+Kyle,lastName,Broflovski,DummyLastName,Broflovski
+Kyle,email,kyle@mail.com,email@dummy.com,kyle@mail.com
+Kyle,status,disabled,enabled,disabled

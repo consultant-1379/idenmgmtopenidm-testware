@@ -1,0 +1,5 @@
+step,host,command,args,expectedOut,expectedExit,timeout
+Verify user login in OpenDJ,sc1,ldapsearch,"-p 1636 --useSSL --trustAll -D ""uid=openidmtafjohn, ou=people,COM_INF_LDAP_ROOT_SUFFIX"" -w TestPassw0rd -b ""ou=people,COM_INF_LDAP_ROOT_SUFFIX"" uid=openidmtafjohn","dn: uid=openidmtafjohn",0,10000
+Sleep 60 Seconds,,sleep,60000,,,100000
+Verify the user's last login time in OpenIDM,sc1,curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request GET  ""https://HTTPD_HOST_NAME/openidm/managed/user/openidmtafjohn""","lastLogin",0,10000
+

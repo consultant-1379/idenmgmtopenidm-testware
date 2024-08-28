@@ -1,0 +1,4 @@
+step,userName,role,newRole
+Assign user to an application role,John,FM_Operator,FM_Administrator
+Assign user to an application role,Ben,Cmedit_Administrator,Cmedit_Operator
+Assign user to an application role,Anna,Shm_Operator,Cmedit_Operator

@@ -1,0 +1,2 @@
+step,userName,firstName,lastName,email,password,userType,enabled,expected
+Create a new user in openIDM with correct attributes,John,John,Nowak,"john@test.com",TestPassw0rd,ADMINISTRATOR,true,"{""_id"":""John"",""_rev"":""0""}"

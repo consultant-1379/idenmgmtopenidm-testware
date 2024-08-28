@@ -1,0 +1,2 @@
+step,host,command,args,expectedOut,expectedOutCode,expectedExit,timeout
+Verify role cannot be deleted,sc1,curl,"--header ""If-Match:\""*\"""" --header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request DELETE ""https://HTTPD_HOST_NAME/openidm/managed/role/openidmtafrole""","""Deleting roles is not allowed.""",0,0,10000

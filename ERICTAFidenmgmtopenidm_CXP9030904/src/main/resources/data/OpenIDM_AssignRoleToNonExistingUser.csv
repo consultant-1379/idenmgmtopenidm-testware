@@ -1,0 +1,3 @@
+step,userName,appRole
+Assign non existing user to an application role,Diego,Administrator
+Assign non existing user to an application role,Lester,SECURITY_ADMIN

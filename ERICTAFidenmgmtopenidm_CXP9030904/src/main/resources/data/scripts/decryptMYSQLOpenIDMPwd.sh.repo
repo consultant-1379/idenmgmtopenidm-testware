@@ -1,0 +1,14 @@
+#!/bin/bash
+
+GLOBAL_PROPERTY_FILE=/ericsson/tor/data/global.properties
+. $GLOBAL_PROPERTY_FILE
+
+IDMMYSQL_PASSKEY=/ericsson/tor/data/idenmgmt/idmmysql_passkey
+
+IDMMYSQL_PWD=openidm
+
+if [ -r "${IDMMYSQL_PASSKEY}" ]; then
+  IDMMYSQL_PWD=`echo ${idm_mysql_admin_password} | openssl enc -a -d -aes-128-cbc -salt -kfile ${IDMMYSQL_PASSKEY}`
+fi
+
+echo $IDMMYSQL_PWD

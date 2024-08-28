@@ -1,0 +1,4 @@
+userName,shouldUserBeCreated,expectedOutput
+Cartman,true,"{""userName"":""Cartman"","
+administrator,false,"{""userName"":""administrator"","
+NotExistingUser,false,"{""error"":404,""reason"":""Not Found"","

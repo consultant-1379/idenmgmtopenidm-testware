@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- This file contains settings for running OpenIDM TAF test suite for CDB
+     with a narrowed number of test cases used in general purpose. This was
+     done due to huge amount of time consumed by running general test suite. -->
+<suite name="OpenIDM_CDB">
+    <test name="OpenIDM Functional Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_FunctionalTestForCDB">
+                <methods>
+                    <include name="verifyOpenIDMStatus"/>
+                    <include name="loginToENM"/>
+                    <include name="verifyQueryAllUsers"/>
+                    <include name="verifyCreateANewUser"/>
+                    <include name="verifyQueryAnExistingUser"/>
+                    <include name="verifyUserSelfPasswordChange"/>
+                    <include name="verifyEditUserInformation"/>
+                    <include name="verifyQueryAllRoles"/>
+                    <include name="verifyQueryDefaultENMRolesUsers"/>
+                    <include name="verifyRetrievePasswordPolicy"/>
+                    <include name="verifyDeleteAUser"/>
+                    <include name="verifyFieldTechnicianRoleAssignment"/>
+                    <include name="verifyApplicationRoles"/>
+                    <include name="verifyOpenIDMReplication"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="OpenIDM Security Test">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_Security_Test"/>
+        </classes>
+    </test>
+</suite>

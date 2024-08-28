@@ -1,0 +1,4 @@
+step,host,command,args,expectedOut,expectedOutCode,expectedExit,unexpectedOut,timeout
+Verify deleting a existing user,sc1,curl,"--header ""If-Match:\""*\"""" --header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request DELETE ""https://HTTPD_HOST_NAME/openidm/managed/user/openidmtafjohn""",not used,0,0,,10000
+Check if the user is deleted,sc1,curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --request GET  ""https://HTTPD_HOST_NAME/openidm/managed/user/openidmtafjohn""","""error"":404,""reason"":""Not Found""",0,0,,10000
+Verify if the user is deleted from openDJ,sc1,ldapsearch,"-p 1636 --useSSL --trustAll -D ""cn=directory manager"" -w OPENDJ_ADMIN_PASSWORD -b ""ou=people,COM_INF_LDAP_ROOT_SUFFIX"" uid=openidmtafjohn",,0,0,objectClass,10000

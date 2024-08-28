@@ -1,0 +1,3 @@
+step,host,command,args,expectedOut,expectedExit,timeout
+Verify OpenIDM is run by non-root user on SC-1,sc1,ps,-ef |grep java | grep openidm | awk '{print $1}',openidm,0,10000
+Verify User cannot start new OpenIDM process while OpenIDM is running,sc1,service,"openidm start","openidm already running with pid(s)",0,10000

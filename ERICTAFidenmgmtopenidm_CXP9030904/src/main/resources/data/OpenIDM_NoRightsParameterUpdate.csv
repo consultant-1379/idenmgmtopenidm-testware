@@ -1,0 +1,2 @@
+step,userName,firstName,lastName,email,userType,enabled,expected
+Create a new user in openIDM with correct attributes,John,John,Nowak,"john@test.com",OPERATOR,true,"{""error"":403,""reason"":""Forbidden"",""message"":""Access denied""}"

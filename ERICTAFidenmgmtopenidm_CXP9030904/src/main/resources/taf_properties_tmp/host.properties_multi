@@ -1,0 +1,35 @@
+#To switch between the cloud and multinode deployment
+#replace this file with one of the files located in the
+#taf_properties_tmp folder
+
+host.sc1.type=SC1
+host.sc1.ip=10.59.132.20
+host.sc1.port.http=8080
+host.sc1.port.rmi=4447
+host.sc1.port.ssh=22
+host.sc1.user.root.type = ADMIN
+host.sc1.user.root.pass=litpc0b6lEr
+
+host.sc1.node.sc-1-jbi.ip = 10.59.132.32
+host.sc1.node.sc-1-jbi.type = jboss
+host.sc1.node.sc-1-jbi.port.http = 8080
+host.sc1.node.sc-1-jbi.port.rmi = 4447
+host.sc1.node.sc-1-jbi.port.jmx = 9999
+host.sc1.node.sc-1-jbi.user.guest.pass=guestp
+host.sc1.node.sc-1-jbi.user.guest.type=OPER
+
+host.sc2.type=SC2
+host.sc2.ip=10.59.132.185
+host.sc2.port.http=8080
+host.sc2.port.rmi=4447
+host.sc2.port.ssh=22
+host.sc2.user.root.type = ADMIN
+host.sc2.user.root.pass=litpc0b6lEr
+
+host.sc2.node.sc-2-jbi.ip = 10.59.132.190
+host.sc2.node.sc-2-jbi.type = jboss
+host.sc2.node.sc-2-jbi.port.http = 8080
+host.sc2.node.sc-2-jbi.port.rmi = 4447
+host.sc2.node.sc-2-jbi.port.jmx = 9999
+host.sc2.node.sc-2-jbi.user.guest.pass=guestp
+host.sc2.node.sc-2-jbi.user.guest.type=OPER

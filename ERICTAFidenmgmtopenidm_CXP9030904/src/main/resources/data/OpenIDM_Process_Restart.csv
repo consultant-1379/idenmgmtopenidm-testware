@@ -1,0 +1,2 @@
+step,host,command,args,expectedOut,expectedOutCode,expectedExit,timeout
+Check OpenIDM status on SC-1,sc1,service,openidm status,is running,0,0,10000

@@ -1,0 +1,2 @@
+step,userName,userNameAdmin,roleAdmin,roleSecAdmin,flagAdmin,flagSecAdmin
+Verify admin can query user,"Jerry","newAdmin","ADMINISTRATOR","SECURITY_ADMIN",true,false

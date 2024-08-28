@@ -1,0 +1,3 @@
+step,host,command,args,expectedOut,expectedExit,errorOut,timeout
+Query all user ids,sc1,curl,"--cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE https://HTTPD_HOST_NAME/openidm/managed/user/?_queryId=query-all-ids",query-time-ms,0,error,10000
+Query all user ids,sc2,curl,"--cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt --header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE https://HTTPD_HOST_NAME/openidm/managed/user/?_queryId=query-all-ids",query-time-ms,0,error,10000

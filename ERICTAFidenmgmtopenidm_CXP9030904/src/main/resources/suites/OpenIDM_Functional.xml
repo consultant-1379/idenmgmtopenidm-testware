@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OpenIDM">
+    <test name="OpenIDM Functional Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_Functional_Test">
+                <methods>
+                    <include name="verifyOpenIDMStatus"/>
+                    <include name="loginToENM"/>
+                    <include name="verifyQueryAllUsers"/>
+                    <include name="verifyCreateANewInvalidUser"/>
+                    <include name="verifyCreateANewValidUser"/>
+                    <include name="verifyQueryAnExistingUser"/>
+                    <include name="verifyUserLastLoginTime"/>
+                    <include name="verifyUserSelfPasswordChange"/>
+                    <include name="verifyEditUserInformationInvalidAttr"/>
+                    <include name="verifyEditUserInformationValidAttr"/>
+                    <include name="verifyDeleteAUser"/>
+                    <include name="verifyForceUserPasswordChange"/>
+                    <include name="verifyCreateANewRole"/>
+                    <include name="verifyQueryAnExistingRole"/>
+                    <include name="verifyQueryAllRoles"/>
+                    <include name="verifyEditRoleInformation"/>
+                    <include name="verifyDeleteARole"/>
+                    <include name="verifyQueryDefaultENMRolesUsers"/>
+                    <include name="verifyRetrievePasswordPolicy"/>
+                    <include name="verifyFieldTechnicianRoleAssignment"/>
+                    <include name="verifyApplicationRoles"/>
+                    <include name="verifyOpenIDMReplication"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="OpenIDM Security Test">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.OpenIDM_Security_Test"/>
+        </classes>
+    </test>
+</suite>

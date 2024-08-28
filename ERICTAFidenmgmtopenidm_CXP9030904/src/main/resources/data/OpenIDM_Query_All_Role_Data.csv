@@ -1,0 +1,2 @@
+step,host,command,args,expectedOut,expectedExit,errorOut,timeout
+Verify querying all roles,sc1,curl,"--header ""X-Requested-With: XMLHttpRequest"" -b COOKIE_FILE --cacert /ericsson/tor/data/certificates/sso/ssoserverapache.crt https://HTTPD_HOST_NAME/openidm/managed/role/?_queryId=query-all-ids",query-time-ms,0,error,10000

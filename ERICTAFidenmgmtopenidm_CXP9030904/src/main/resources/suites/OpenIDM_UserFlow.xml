@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- This file contains settings for running OpenIDM TAF test suite for CDB 
+	with a narrowed number of test cases used in general purpose. This was done 
+	due to huge amount of time consumed by running general test suite. -->
+<suite name="OpenIDM_RFATestingSuite_OrdinaryUserPerspective">
+	<test name="OpenIDM_UserFlow_Scenario" preserve-order="true">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.taf.test.scenarios.OpenIDM_UserFlow_Scenario" />
+		</classes>
+	</test>
+</suite>

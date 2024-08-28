@@ -1,0 +1,2 @@
+step,expectedOut
+Verify OpenIDM status,"""shortDesc""":"""OpenIDM ready"""}
